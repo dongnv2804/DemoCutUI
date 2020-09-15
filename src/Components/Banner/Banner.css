@@ -1,0 +1,52 @@
+.banner {
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  background-image: url(https://1503641826.rsc.cdn77.org/Media/tlbvpeyhgxrkqiqodxbojmbwp_usermedia.jpg);
+}
+.content-banner {
+  text-align: center;
+}
+.content-banner h1,
+h2 {
+  margin-bottom: 0;
+}
+.content-right {
+  text-align: right;
+}
+.content-left {
+  text-align: left;
+}
+.title-banner {
+  color: white;
+  font-size: 70px;
+  font-weight: 400;
+}
+.text-banner {
+  color: white;
+  font-size: 50px;
+}
+.btn-banner {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Roboto;
+  cursor: pointer;
+  color: white;
+  padding: 15px 40px;
+  background: transparent;
+  border: 1px solid white;
+}
+#btn-banner-right {
+  border: 1px solid rgb(17, 202, 182);
+  background-color: #11cab6;
+}
+#btn-banner-right:hover {
+  transition-delay: 5ms;
+  background-color: #343a40;
+  border: 1px solid #343a40;
+}

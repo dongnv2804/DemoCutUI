@@ -1,0 +1,39 @@
+#section3 {
+  height: 540px;
+  background-color: transparent;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.headline1 {
+  font-family: Josefin Sans;
+  font-size: 60px;
+  color: #6a585b;
+  font-weight: normal;
+}
+.headline2 {
+  margin-bottom: 30px;
+  text-shadow: 0 1px 0 #fff;
+  padding: 0px;
+  font-family: Josefin Sans;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  direction: ltr;
+  font-size: 40px;
+  color: #aba1a3;
+}
+.dragable {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.drag-image {
+  width: 25%;
+}
+.drag-body {
+  margin-top: 35px;
+  width: 75%;
+}

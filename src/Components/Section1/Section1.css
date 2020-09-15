@@ -1,0 +1,21 @@
+#section1 {
+  height: 400px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.card-dragable {
+  text-align: center;
+}
+.dragable-headline h4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 25px;
+  font-size: 28px;
+  color: #393d3e;
+}
+.dragable-text span {
+  color: #8e8386;
+  font-size: 18px;
+  line-height: 25px;
+}
