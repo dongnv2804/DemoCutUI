@@ -1,0 +1,27 @@
+#section4 {
+  height: 480px;
+}
+.video {
+  background-image: url("https://i.vimeocdn.com/video/127119331.webp?mw=700&mh=394&q=70");
+  background-size: cover;
+}
+#elm_section4 {
+  padding-top: 0;
+}
+.dragable-button {
+  height: 25%;
+}
+.flcol-25 {
+  height: 25%;
+}
+.flcol-50 {
+  height: 50%;
+}
+.dragable-button button {
+  position: absolute;
+  bottom: 0;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+}

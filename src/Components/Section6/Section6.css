@@ -1,0 +1,50 @@
+#section6 {
+  height: 630px;
+  background-color: #efeeea;
+}
+.profile-img {
+  margin: auto;
+  height: 90px;
+  width: 90px;
+  border: 0px solid rgb(0, 0, 0);
+  background-color: transparent;
+  margin-top: -45px;
+}
+.mb2-5 {
+  margin-bottom: 2.5rem !important;
+}
+.profile-head {
+  text-align: center;
+}
+.profile-body {
+  text-align: center;
+}
+.profile-body p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nameprofile {
+  font-family: Roboto;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: normal;
+  text-align: center;
+  direction: ltr;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+.positionprofile {
+  font-family: Roboto;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  text-align: center;
+  direction: ltr;
+  font-size: 14px;
+  color: #8e8386;
+}
+.profile-body p span {
+  line-height: 25px;
+  color: #8e8386;
+  font-size: 14px;
+}
