@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import "./Footer1.css";
+import "./Footer.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
-export default class Footer1 extends Component {
-  render() {
-    return (
+const Footer = () => {
+  return (
+    <>
       <Container fluid id="footer1">
         <Container>
           <div className="text-center footer-body">
@@ -26,12 +26,16 @@ export default class Footer1 extends Component {
             <div className="hr-footer"></div>
             <div className="footer-text">
               <p>
-                <span>Made with love by @mylanko     © 2015 Themeforest</span>
+                <span>Made with love by @mylanko © 2015 Themeforest</span>
               </p>
             </div>
           </div>
         </Container>
       </Container>
-    );
-  }
-}
+      <div className="footer2">
+      <a>Created by Pagewiz - The Landing Page Platform</a>
+    </div>
+    </>
+  );
+};
+export default Footer;
