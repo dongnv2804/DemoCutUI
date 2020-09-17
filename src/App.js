@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Banner from "./Components/Banner/Banner";
 import Section1 from "./Components/Section1/Section1";
@@ -16,7 +15,7 @@ function App() {
     <div className="app">
       <Banner />
       <div id="btn-scroll">
-        <a>
+        <a href="#section1">
           <img src="https://1503641826.rsc.cdn77.org/Media/ccqnxikprrbwpdcpdtejfkqsw_usermedia.png"></img>
         </a>
       </div>
