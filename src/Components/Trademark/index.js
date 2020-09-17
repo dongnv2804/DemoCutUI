@@ -1,7 +1,7 @@
 import React from "react";
 import "./Trademark.css";
-import { Container, Row } from "react-bootstrap";
-import { connect } from "react-redux";
+import { Container } from "react-bootstrap";
+import { useSelector } from "react-redux";
 
 const Drag = (props) => {
   return (
@@ -10,7 +10,10 @@ const Drag = (props) => {
     </div>
   );
 };
-const Trademark = ({ listdrags }) => {
+const Trademark = () => {
+  const listdrags = useSelector(
+    (state) => state.TrademarkReducer.listdragables
+  );
   return (
     <Container fluid id="section7">
       <Container>
@@ -23,9 +26,5 @@ const Trademark = ({ listdrags }) => {
     </Container>
   );
 };
-const mapStateToProps = (state, ownProps) => {
-  return {
-    listdrags: state.TrademarkReducer.listdragables,
-  };
-};
-export default connect(mapStateToProps)(Trademark);
+
+export default Trademark;

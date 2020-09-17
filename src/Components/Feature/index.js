@@ -2,8 +2,9 @@ import React from "react";
 import "./Feature.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Drag3 from "./Drag3";
-import { connect } from "react-redux";
-const Feature = ({ listdrags }) => {
+import { useSelector } from "react-redux";
+const Feature = () => {
+  const listdrags = useSelector((state) => state.FeatureReducer.listdragables);
   return (
     <Container fluid className="flex-section" id="section3">
       <Container>
@@ -25,9 +26,4 @@ const Feature = ({ listdrags }) => {
   );
 };
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    listdrags: state.FeatureReducer.listdragables,
-  };
-};
-export default connect(mapStateToProps)(Feature);
+export default Feature;

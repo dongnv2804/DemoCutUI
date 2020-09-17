@@ -2,9 +2,10 @@ import React from "react";
 import "./Feedback.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import DragableProfile from "./DragableProfile";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 
-const Feedback = ({ listdrags }) => {
+const Feedback = () => {
+  const listdrags = useSelector((state) => state.FeedbackReducer.listdragables);
   return (
     <Container fluid id="section6" className="flex-section">
       <Container>
@@ -25,10 +26,4 @@ const Feedback = ({ listdrags }) => {
     </Container>
   );
 };
-
-const mapStateToProps = (state, ownProps) => {
-  return {
-    listdrags: state.FeedbackReducer.listdragables,
-  };
-};
-export default connect(mapStateToProps)(Feedback);
+export default Feedback;

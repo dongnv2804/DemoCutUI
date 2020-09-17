@@ -2,9 +2,10 @@ import React from "react";
 import "./Plans.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import DragableShape from "./DragableShape";
-import { connect } from "react-redux";
+import { connect, useSelector } from "react-redux";
 
-const Plans = ({ listdrags }) => {
+const Plans = () => {
+  const listdrags = useSelector((state) => state.PlansReducer.listdragables);
   return (
     <Container fluid id="section5" className="flex-section">
       <Container>
@@ -25,9 +26,5 @@ const Plans = ({ listdrags }) => {
     </Container>
   );
 };
-const mapStateToProps = (state, ownProps) => {
-  return {
-    listdrags: state.PlansReducer.listdragables,
-  };
-};
-export default connect(mapStateToProps)(Plans);
+
+export default Plans;

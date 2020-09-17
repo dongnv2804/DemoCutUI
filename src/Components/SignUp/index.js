@@ -3,9 +3,10 @@ import "./SignUp.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Dragable from "./Dragable";
 import FormSignUp from "./FormSignUp";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 
-const SignUp = ({ listdrags }) => {
+const SignUp = () => {
+  const listdrags = useSelector((state) => state.SignupReducer.listdragables);
   return (
     <Container fluid id="section2" className="flex-section">
       <Container>
@@ -31,9 +32,4 @@ const SignUp = ({ listdrags }) => {
     </Container>
   );
 };
-const mapStateToProps = (state, ownProps) => {
-  return {
-    listdrags: state.SignupReducer.listdragables,
-  };
-};
-export default connect(mapStateToProps)(SignUp);
+export default SignUp;
