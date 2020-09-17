@@ -1,47 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Plans.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import DragableShape from "./DragableShape";
-const listdragables = [
-  {
-    price: 0,
-    headline: "BASIC",
-    content: [
-      "Lorem ipsum dolor sit",
-      "Amet nusce agestas",
-      "Maecenas gravida ullacomper",
-    ],
-    activeshape: false,
-    textbutton: "GET FOR FREE",
-    colorbutton: "#11cab6",
-  },
-  {
-    price: 49,
-    headline: "STANDARD",
-    content: [
-      "Fusce fabulus lobortis",
-      "Egestas fibinus efficur et",
-      "Henderit rutrum pretium sit",
-    ],
-    activeshape: true,
-    textbutton: "SIGN UP NOW",
-    colorbutton: "#f26347",
-  },
-  {
-    price: 149,
-    headline: "ENTERPRISE",
-    content: [
-      "Fusce fabulus lobortis",
-      "Egestas fibinus efficur et",
-      "Henderit rutrum pretium sit",
-    ],
-    activeshape: false,
-    textbutton: "SIGN UP NOW",
-    colorbutton: "#11cab6",
-  },
-];
-const Plans = () => {
-  const [listdrags, setListrags] = useState(listdragables);
+import { connect } from "react-redux";
+
+const Plans = ({ listdrags }) => {
   return (
     <Container fluid id="section5" className="flex-section">
       <Container>
@@ -62,4 +25,9 @@ const Plans = () => {
     </Container>
   );
 };
-export default Plans;
+const mapStateToProps = (state, ownProps) => {
+  return {
+    listdrags: state.PlansReducer.listdragables,
+  };
+};
+export default connect(mapStateToProps)(Plans);

@@ -1,31 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SignUp.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Dragable from "./Dragable";
 import FormSignUp from "./FormSignUp";
+import { connect } from "react-redux";
 
-const listdragables = [
-  {
-    img:
-      "https://1503641826.rsc.cdn77.org/Media/lumjnqfwsisugrdyqrnsuqian_usermedia.png",
-    text:
-      "Donec scelerisque finibus dui, in pretium ligula pharetra ut. Phasellus mattis lacus vel sagittis consequat. Nulla vitae libero placerat, molestie sapien sed, blandit nibh. Maecenas non vehicula purus.",
-  },
-  {
-    img:
-      "https://1503641826.rsc.cdn77.org/Media/lumjnqfwsisugrdyqrnsuqian_usermedia.png",
-    text:
-      "Donec scelerisque finibus dui, in pretium ligula pharetra ut. Phasellus mattis lacus vel sagittis consequat. Nulla vitae libero placerat, molestie sapien sed, blandit nibh. Maecenas non vehicula purus.",
-  },
-  {
-    img:
-      "https://1503641826.rsc.cdn77.org/Media/lumjnqfwsisugrdyqrnsuqian_usermedia.png",
-    text:
-      "Donec scelerisque finibus dui, in pretium ligula pharetra ut. Phasellus mattis lacus vel sagittis consequat. Nulla vitae libero placerat, molestie sapien sed, blandit nibh. Maecenas non vehicula purus.",
-  },
-];
-const SignUp = () => {
-  const [listdrags, setListdrags] = useState(listdragables);
+const SignUp = ({ listdrags }) => {
   return (
     <Container fluid id="section2" className="flex-section">
       <Container>
@@ -51,4 +31,9 @@ const SignUp = () => {
     </Container>
   );
 };
-export default SignUp;
+const mapStateToProps = (state, ownProps) => {
+  return {
+    listdrags: state.SignupReducer.listdragables,
+  };
+};
+export default connect(mapStateToProps)(SignUp);
