@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Plans.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import DragableShape from "./DragableShape";
-import { connect, useSelector } from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
+import { getData } from "./plansSlice";
 const Plans = () => {
-  const listdrags = useSelector((state) => state.PlansReducer.listdragables);
+  const listdrags = useSelector((state) => state.plans.listdragables);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getData());
+  }, []);
+  const elements =
+    listdrags != undefined
+      ? listdrags.map((value, index) => {
+          return <DragableShape key={index} drag={value} />;
+        })
+      : undefined;
   return (
     <Container fluid id="section5" className="flex-section">
       <Container>
@@ -17,11 +27,7 @@ const Plans = () => {
             </h2>
           </Col>
         </Row>
-        <Row className="text-center flex-spacebeetween">
-          {listdrags.map((value, index) => {
-            return <DragableShape key={index} drag={value} />;
-          })}
-        </Row>
+        <Row className="text-center flex-spacebeetween">{elements}</Row>
       </Container>
     </Container>
   );

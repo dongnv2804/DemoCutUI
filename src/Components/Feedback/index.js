@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Feedback.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import DragableProfile from "./DragableProfile";
-import { useSelector } from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
+import { getData } from "./feedbackSlice";
 const Feedback = () => {
-  const listdrags = useSelector((state) => state.FeedbackReducer.listdragables);
+  const listdrags = useSelector((state) => state.feedbacks.listdragables);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getData());
+  }, []);
+  const elements =
+    listdrags != undefined
+      ? listdrags.map((value, index) => {
+          return <DragableProfile key={index} drag={value} />;
+        })
+      : undefined;
   return (
     <Container fluid id="section6" className="flex-section">
       <Container>
@@ -17,11 +27,7 @@ const Feedback = () => {
             </h2>
           </Col>
         </Row>
-        <Row>
-          {listdrags.map((value, index) => {
-            return <DragableProfile key={index} drag={value} />;
-          })}
-        </Row>
+        <Row>{elements}</Row>
       </Container>
     </Container>
   );

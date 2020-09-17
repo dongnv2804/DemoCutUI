@@ -1,5 +1,20 @@
-import { actionType } from "./ActionType";
-const Initial_State = {
+import { createSlice } from "@reduxjs/toolkit";
+
+const feedbackSlice = createSlice({
+  name: "feedback",
+  initialState: {},
+  reducers: {
+    getData(state, action) {
+      state = initialState;
+      return state;
+    },
+  },
+});
+
+export const { getData } = feedbackSlice.actions;
+export default feedbackSlice.reducer;
+
+const initialState = {
   listdragables: [
     {
       img:
@@ -26,14 +41,4 @@ const Initial_State = {
         "Curabitur ac tincidunt ipsum, id vulputate est. Curabitur at sagittis sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque ut eleifend dui. Donec enim dui, elementum.",
     },
   ],
-};
-export const FeedbackReducer = (state = Initial_State, action) => {
-  switch (action.type) {
-    case actionType.GET_Data:
-      return state;
-      break;
-    default:
-      return state;
-      break;
-  }
 };

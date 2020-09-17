@@ -1,15 +1,15 @@
 import { combineReducers } from "redux";
-import { CharacteristicReducer } from "./CharacteristicReducer";
-import { FeatureReducer } from "./FeatureReducer";
-import { FeedbackReducer } from "./FeedbackReducer";
-import { PlansReducer } from "./PlansReducer";
-import { SignupReducer } from "./SignupReducer";
-import { TrademarkReducer } from "./TrademarkReducer";
+import characteristicReducer from "../Components/Characteristic/CharacteristicSlice";
+import featureReducer from "../Components/Feature/featureSlice";
+import feedbackReducer from "../Components/Feedback/feedbackSlice";
+import planReducer from "../Components/Plans/plansSlice";
+import signupReducer from "../Components/SignUp/signupSlice";
+import trademarkReducer from "../Components/Trademark/trademarkSlice";
 export const rootReducer = combineReducers({
-  CharacteristicReducer,
-  FeatureReducer,
-  FeedbackReducer,
-  PlansReducer,
-  SignupReducer,
-  TrademarkReducer,
+  characteristics: characteristicReducer,
+  features: featureReducer,
+  feedbacks: feedbackReducer,
+  plans: planReducer,
+  signups: signupReducer,
+  trademarks: trademarkReducer,
 });

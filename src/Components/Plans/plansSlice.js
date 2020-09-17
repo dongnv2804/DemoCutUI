@@ -1,5 +1,20 @@
-import { actionType } from "./ActionType";
-const Initial_State = {
+import { createSlice } from "@reduxjs/toolkit";
+
+const planSlice = createSlice({
+  name: "plan",
+  initialState: {},
+  reducers: {
+    getData(state, action) {
+      state = initialState;
+      return state;
+    },
+  },
+});
+
+export const { getData } = planSlice.actions;
+export default planSlice.reducer;
+
+const initialState = {
   listdragables: [
     {
       price: 0,
@@ -38,14 +53,4 @@ const Initial_State = {
       colorbutton: "#11cab6",
     },
   ],
-};
-export const PlansReducer = (state = Initial_State, action) => {
-  switch (action.type) {
-    case actionType.GET_Data:
-      return state;
-      break;
-    default:
-      return state;
-      break;
-  }
 };
