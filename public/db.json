@@ -1,0 +1,160 @@
+{
+   "listCharacters" : [
+    {
+      "img":
+        "https://1503641826.rsc.cdn77.org/Media/noiodkfycayfurjcxphglccbt_usermedia.png",
+      "headline": "Maecenas currabitur",
+      "text":
+        "Aliquam justo neque, fermentum vel posuere vulputate vitae mi. Vestibulum magna tempor nisl vehicula luctus urna. Aenean augue ligula, molestie id est in, bibendum dignissim. Cras tellus nisl, laoreet at nisi venenatis."
+    },
+    {
+      "img":
+        "https://1503641826.rsc.cdn77.org/Media/noiodkfycayfurjcxphglccbt_usermedia.png",
+      "headline": "Maecenas currabitur",
+      "text":
+        "Aliquam justo neque, fermentum vel posuere vulputate vitae mi. Vestibulum magna tempor nisl vehicula luctus urna. Aenean augue ligula, molestie id est in, bibendum dignissim. Cras tellus nisl, laoreet at nisi venenatis."
+    },
+    {
+      "img":
+        "https://1503641826.rsc.cdn77.org/Media/noiodkfycayfurjcxphglccbt_usermedia.png",
+      "headline": "Maecenas currabitur",
+      "text":
+        "Aliquam justo neque, fermentum vel posuere vulputate vitae mi. Vestibulum magna tempor nisl vehicula luctus urna. Aenean augue ligula, molestie id est in, bibendum dignissim. Cras tellus nisl, laoreet at nisi venenatis."
+    }
+  ],
+  "listfeatures" : [
+      {
+        "img":
+          "https://1503641826.rsc.cdn77.org/Media/ojnosyxkhwnghpxtnynnoazvm_usermedia.png",
+        "headline": "Desktop & Mobile",
+        "text":
+          "Suspendisse vel lacinia orci, ut commodo enim. Vestibulum at ultrices sapien."
+      },
+      {
+        "img":
+          "https://1503641826.rsc.cdn77.org/Media/gsvnznksckjwumbbulpqcgzer_usermedia.png",
+        "headline": "ProGlyphs Icon Set",
+        "text":
+          "Nulla ultrices eros auctor enim sollicitudin, a rutrum quam mollis. Nulla at odio lectus."
+      },
+      {
+        "img":
+          "https://1503641826.rsc.cdn77.org/Media/dbeeuznkrocqxwlwyfpzypmsp_usermedia.png",
+        "headline": "Easy to Use",
+        "text":
+          "Donec semper odio non efficitur congue. Aenean augue ligula, molestie id est in."
+      },
+      {
+        "img":
+          "https://1503641826.rsc.cdn77.org/Media/xxmzvasqwvlfnhkwmdxzkwodu_usermedia.png",
+        "headline": "Drag & Drop",
+        "text":
+          "Proin cursus arcu mauris, et pulvinar lectus fermentum sed. Donec imperdiet est."
+      },
+      {
+        "img":
+          "https://1503641826.rsc.cdn77.org/Media/dajesoolpwbalvojzbbaqlxec_usermedia.png",
+        "headline": "Statistics",
+        "text":
+          "Phasellus varius blandit felis nec porttitor. Donec sit amet ante sit amet sapien."
+      },
+      {
+        "img":
+          "https://1503641826.rsc.cdn77.org/Media/mmpteajifsaimdgxuxljwaijp_usermedia.png",
+        "headline": "Save Money",
+        "text":
+          "Curabitur at sagittis. Vestibulum ante ipsum primis in faucibus luctus ultrices posuere cubilia."
+      }
+    ],
+    "listFeebacks" : [
+      {
+        "img":
+          "https://1503641826.rsc.cdn77.org/Media/ekcpwfoeygsvehpfempkcbvyz_usermedia.png",
+        "name": "Joey Higgins",
+        "position": "CEO Higgins&Geox ",
+        "content":
+          "Praesent et purus ac libero euismod egestas. Aliquam feugiat luctus eros eget maecenas semper pulvinar. tiam in auctor tortor. Aliquam vulputate risus placerat congue ornare. Donec semper odio non efficitur congue."
+      },
+      {
+        "img":
+          "https://1503641826.rsc.cdn77.org/Media/tqqkfyxwtevculhlwopeiswos_usermedia.png",
+        "name": "Amanda Fox",
+        "position": "Designer at Amanidax",
+        "content":
+          "Donec a tortor viverra, tempus nibh ut, dapibus nunc. Maecenas interdum vulputate fermentum. Suspendisse id nisi magna. Fusce interdum interdum lacus ut bibendum. In sit amet tempor felis. Sed a urna mattis convallis."
+      },
+      {
+        "img":
+          "https://1503641826.rsc.cdn77.org/Media/clrsditnfmpakuydorbaptatt_usermedia.png",
+        "name": "Bill Catmull",
+        "position": "Designer at ProGlyphs",
+        "content":
+          "Curabitur ac tincidunt ipsum, id vulputate est. Curabitur at sagittis sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque ut eleifend dui. Donec enim dui, elementum."
+      }
+    ],
+    "listPlans" : [
+      {
+        "price": 0,
+        "headline": "BASIC",
+        "content": [
+          "Lorem ipsum dolor sit",
+          "Amet nusce agestas",
+          "Maecenas gravida ullacomper"
+        ],
+        "activeshape": false,
+        "textbutton": "GET FOR FREE",
+        "colorbutton": "#11cab6"
+      },
+      {
+        "price": 49,
+        "headline": "STANDARD",
+        "content": [
+          "Fusce fabulus lobortis",
+          "Egestas fibinus efficur et",
+          "Henderit rutrum pretium sit"
+        ],
+        "activeshape": true,
+        "textbutton": "SIGN UP NOW",
+        "colorbutton": "#f26347"
+      },
+      {
+        "price": 149,
+        "headline": "ENTERPRISE",
+        "content": [
+          "Fusce fabulus lobortis",
+          "Egestas fibinus efficur et",
+          "Henderit rutrum pretium sit"
+        ],
+        "activeshape": false,
+        "textbutton": "SIGN UP NOW",
+        "colorbutton": "#11cab6"
+      }
+    ],
+    "listSignups" : [
+      {
+        "img":
+          "https://1503641826.rsc.cdn77.org/Media/lumjnqfwsisugrdyqrnsuqian_usermedia.png",
+        "text":
+          "Donec scelerisque finibus dui, in pretium ligula pharetra ut. Phasellus mattis lacus vel sagittis consequat. Nulla vitae libero placerat, molestie sapien sed, blandit nibh. Maecenas non vehicula purus."
+      },
+      {
+        "img":
+          "https://1503641826.rsc.cdn77.org/Media/lumjnqfwsisugrdyqrnsuqian_usermedia.png",
+        "text":
+          "Donec scelerisque finibus dui, in pretium ligula pharetra ut. Phasellus mattis lacus vel sagittis consequat. Nulla vitae libero placerat, molestie sapien sed, blandit nibh. Maecenas non vehicula purus."
+      },
+      {
+        "img":
+          "https://1503641826.rsc.cdn77.org/Media/lumjnqfwsisugrdyqrnsuqian_usermedia.png",
+        "text":
+          "Donec scelerisque finibus dui, in pretium ligula pharetra ut. Phasellus mattis lacus vel sagittis consequat. Nulla vitae libero placerat, molestie sapien sed, blandit nibh. Maecenas non vehicula purus."
+      }
+    ],
+    "listTrademarks" : [
+      "https://1503641826.rsc.cdn77.org/Media/wjqtvaucrdmfepwcoozrklurb_usermedia.png",
+      "https://1503641826.rsc.cdn77.org/Media/tbvodilxzhycuklvysqlxkbfx_usermedia.png",
+      "https://1503641826.rsc.cdn77.org/Media/aeabikpzsbzyoouaheixaueow_usermedia.png",
+      "https://1503641826.rsc.cdn77.org/Media/msefdjzqqdekvqwjccilwjevk_usermedia.png",
+      "https://1503641826.rsc.cdn77.org/Media/qfthxfzmfwsktosaixlqqlnln_usermedia.png"
+    ]   
+}

@@ -24,6 +24,7 @@ function App() {
       <Explore />
       <Plans />
       <Feedback />
+      <Trademark />
       <Footer />
     </div>
   );

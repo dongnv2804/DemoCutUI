@@ -7,7 +7,7 @@ import { getData } from "./trademarkSlice";
 const Drag = (props) => {
   return (
     <div className="img-icon">
-      <img src={props.img}></img>
+      <img src={props.img} alt=""></img>
     </div>
   );
 };
