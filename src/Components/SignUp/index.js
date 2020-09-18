@@ -5,18 +5,13 @@ import Dragable from "./Dragable";
 import FormSignUp from "./FormSignUp";
 import { useDispatch, useSelector } from "react-redux";
 import { getData } from "./signupSlice";
+
 const SignUp = () => {
   const listdrags = useSelector((state) => state.signups.listdragables);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getData());
   }, []);
-  const elements =
-    listdrags != undefined
-      ? listdrags.map((value, index) => {
-          return <Dragable key={index} drag={value} />;
-        })
-      : undefined;
   return (
     <Container fluid id="section2" className="flex-section">
       <Container>
@@ -30,7 +25,9 @@ const SignUp = () => {
                 <h2 id="text2">Maecenas gravida ullacomper nescum seget</h2>
               </Col>
             </Row>
-            {elements}
+            {listdrags.map((value, index) => (
+              <Dragable key={index} drag={value} />
+            ))}
           </Col>
           <Col md={4} className="wrapform">
             <FormSignUp />

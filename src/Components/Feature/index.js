@@ -10,12 +10,6 @@ const Feature = () => {
   useEffect(() => {
     dispatch(getData());
   }, []);
-  const elements =
-    listdrags != undefined
-      ? listdrags.map((value, index) => {
-          return <Drag3 key={index} drag={value} />;
-        })
-      : undefined;
   return (
     <Container fluid className="flex-section" id="section3">
       <Container>
@@ -27,7 +21,11 @@ const Feature = () => {
             </h2>
           </Col>
         </Row>
-        <Row>{elements}</Row>
+        <Row>
+          {listdrags.map((value, index) => (
+            <Drag3 key={index} drag={value} />
+          ))}
+        </Row>
       </Container>
     </Container>
   );

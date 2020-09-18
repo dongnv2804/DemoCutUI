@@ -3,6 +3,7 @@ import "./Trademark.css";
 import { Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { getData } from "./trademarkSlice";
+
 const Drag = (props) => {
   return (
     <div className="img-icon">
@@ -16,16 +17,14 @@ const Trademark = () => {
   useEffect(() => {
     dispatch(getData());
   }, []);
-  const elements =
-    listdrags != undefined
-      ? listdrags.map((value, index) => {
-          return <Drag key={index} img={value} />;
-        })
-      : undefined;
   return (
     <Container fluid id="section7">
       <Container>
-        <div className="flex-spacebeetween">{elements}</div>
+        <div className="flex-spacebeetween">
+          {listdrags.map((value, index) => (
+            <Drag key={index} img={value} />
+          ))}
+        </div>
       </Container>
     </Container>
   );

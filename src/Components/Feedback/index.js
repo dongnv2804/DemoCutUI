@@ -10,12 +10,7 @@ const Feedback = () => {
   useEffect(() => {
     dispatch(getData());
   }, []);
-  const elements =
-    listdrags != undefined
-      ? listdrags.map((value, index) => {
-          return <DragableProfile key={index} drag={value} />;
-        })
-      : undefined;
+
   return (
     <Container fluid id="section6" className="flex-section">
       <Container>
@@ -27,7 +22,11 @@ const Feedback = () => {
             </h2>
           </Col>
         </Row>
-        <Row>{elements}</Row>
+        <Row>
+          {listdrags.map((value, index) => (
+            <DragableProfile key={index} drag={value} />
+          ))}
+        </Row>
       </Container>
     </Container>
   );

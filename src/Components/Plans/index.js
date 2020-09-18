@@ -10,12 +10,6 @@ const Plans = () => {
   useEffect(() => {
     dispatch(getData());
   }, []);
-  const elements =
-    listdrags != undefined
-      ? listdrags.map((value, index) => {
-          return <DragableShape key={index} drag={value} />;
-        })
-      : undefined;
   return (
     <Container fluid id="section5" className="flex-section">
       <Container>
@@ -27,7 +21,11 @@ const Plans = () => {
             </h2>
           </Col>
         </Row>
-        <Row className="text-center flex-spacebeetween">{elements}</Row>
+        <Row className="text-center flex-spacebeetween">
+          {listdrags.map((value, index) => (
+            <DragableShape key={index} drag={value} />
+          ))}
+        </Row>
       </Container>
     </Container>
   );
