@@ -17,7 +17,7 @@
 .flcol-50 {
   height: 50%;
 }
-.dragable-button button {
+.button-bottom {
   position: absolute;
   bottom: 0;
 }

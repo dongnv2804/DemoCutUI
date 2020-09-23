@@ -4,6 +4,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import DragableShape from "./DragableShape";
 import { useDispatch, useSelector } from "react-redux";
 import { getData } from "./plansSlice";
+import { HeadlineLg, Headlineunder } from "../../style/styled";
 const Plans = () => {
   const listdrags = useSelector((state) => state.plans.listdragables);
   const dispatch = useDispatch();
@@ -15,10 +16,11 @@ const Plans = () => {
       <Container>
         <Row className="text-center">
           <Col>
-            <h2 className="headline1">CHECK OUT OUR PLANS</h2>
-            <h2 className="headline2">
+            <HeadlineLg>CHECK OUT OUR PLANS</HeadlineLg>
+            <Headlineunder>
+              {" "}
               Choose your own pricing plan to meet your requirements{" "}
-            </h2>
+            </Headlineunder>
           </Col>
         </Row>
         <Row className="text-center flex-spacebeetween">

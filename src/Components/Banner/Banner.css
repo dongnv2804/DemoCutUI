@@ -12,25 +12,13 @@
 .content-banner {
   text-align: center;
 }
-.content-banner h1,
-h2 {
-  margin-bottom: 0;
-}
 .content-right {
   text-align: right;
 }
 .content-left {
   text-align: left;
 }
-.title-banner {
-  color: white;
-  font-size: 70px;
-  font-weight: 400;
-}
-.text-banner {
-  color: white;
-  font-size: 50px;
-}
+
 .btn-banner {
   font-size: 18px;
   font-weight: bold;

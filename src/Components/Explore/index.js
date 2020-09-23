@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { ButtonStyle ,FlexCol25} from "../../style/styled";
 import "./Explore.css";
 
 const Explore = () => {
@@ -32,15 +33,9 @@ const Explore = () => {
                 </span>
               </p>
             </div>
-            <div className="dragable-button">
-              <Button
-                variant="dark"
-                id="btn-banner-right"
-                className="btn-banner"
-              >
-                Buy Template
-              </Button>
-            </div>
+            <FlexCol25>
+            <ButtonStyle background="#11cab6" {...{className:"button-bottom",children:"Buy Template"}}></ButtonStyle>
+            </FlexCol25>
           </Col>
         </Row>
       </Container>

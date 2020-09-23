@@ -3,6 +3,7 @@ import "./Trademark.css";
 import { Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { getData } from "./trademarkSlice";
+import { FlexBetween } from "../../style/styled";
 
 const Drag = (props) => {
   return (
@@ -20,11 +21,11 @@ const Trademark = () => {
   return (
     <Container fluid id="section7">
       <Container>
-        <div className="flex-spacebeetween">
+        <FlexBetween>
           {listdrags.map((value, index) => (
             <Drag key={index} img={value} />
           ))}
-        </div>
+        </FlexBetween>
       </Container>
     </Container>
   );

@@ -9,15 +9,16 @@ import Plans from "./Components/Plans";
 import Feedback from "./Components/Feedback";
 import Trademark from "./Components/Trademark";
 import Footer from "./Components/Footer";
+import { ButtonScroll } from "./style/styled";
 function App() {
   return (
-    <div className="app">
+    <>
       <Banner />
-      <div id="btn-scroll">
+      <ButtonScroll>
         <a href="#section1">
           <img src="https://1503641826.rsc.cdn77.org/Media/ccqnxikprrbwpdcpdtejfkqsw_usermedia.png"></img>
         </a>
-      </div>
+      </ButtonScroll>
       <Characteristic />
       <SignUp />
       <Feature />
@@ -26,7 +27,7 @@ function App() {
       <Feedback />
       <Trademark />
       <Footer />
-    </div>
+    </>
   );
 }
 

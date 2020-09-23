@@ -7,15 +7,6 @@
   background-attachment: scroll;
   background-size: auto;
 }
-.hr-footer {
-  margin: auto;
-  margin-top: 60px !important;
-  height: 1px;
-  width: 960px;
-  border: 0px solid rgb(0, 0, 0);
-  background-color: #f1593c;
-  box-shadow: 0px 0px 0px #ffffff;
-}
 .footer-headline h2 {
   font-family: Josefin Sans;
   font-weight: normal;
@@ -33,9 +24,6 @@
   direction: ltr;
   font-size: 30px;
   color: #ffffff;
-}
-.footer-body{
-  padding-top: 50px;
 }
 .footer-button
 {
@@ -55,18 +43,4 @@
 }
 .footer-text p {
   margin-top: 1;
-}
-.footer2 {
-  text-align: center;
-  border-top: 1px solid #d6d6d6;
-  background-color: #212121;
-  height: 20px;
-  line-height: 20px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-}
-.footer2 a {
-  color: white;
-  text-decoration: none;
 }

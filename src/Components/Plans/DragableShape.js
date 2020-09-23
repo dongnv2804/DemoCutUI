@@ -1,15 +1,12 @@
 import React from "react";
 import { Col, Card } from "react-bootstrap";
+import { ButtonStyle, DragShape, Underline } from "../../style/styled";
 const DragableShape = (props) => {
   return (
     <Col md={4}>
       <Card className="drag-card">
         <div className="bodycard">
-          <div
-            className={
-              props.drag.activeshape ? "drag-shape shape-active" : "drag-shape"
-            }
-          >
+          <DragShape active={props.drag.activeshape}>
             <div className="head-drag">
               <h5
                 className={
@@ -28,13 +25,13 @@ const DragableShape = (props) => {
                 {props.drag.price}
               </h2>
             </div>
-          </div>
+          </DragShape>
           <div className="headlinecardbody">
             <h4 className="text-headline">
               <span>{props.drag.headline}</span>
             </h4>
           </div>
-          <div className="hrcustom text-center"></div>
+          <Underline />
           <div className="drag-content">
             {props.drag.content.map((value, index) => {
               return (
@@ -53,15 +50,11 @@ const DragableShape = (props) => {
             })}
           </div>
           <div className="drag-button">
-            <button
-              className="btn btn-dark btn-banner"
-              style={{
-                backgroundColor: props.drag.colorbutton,
-                border: `0px solid ${props.drag.colorbutton}`,
-              }}
-            >
-              {props.drag.textbutton}
-            </button>
+            <ButtonStyle
+              background={props.drag.colorbutton}
+              border={`0px solid ${props.drag.colorbutton}`}
+              {...{ children: props.drag.textbutton }}
+            ></ButtonStyle>
           </div>
         </div>
       </Card>

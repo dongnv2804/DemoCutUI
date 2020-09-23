@@ -2,7 +2,8 @@ import React from "react";
 import { Form, Button, Col } from "react-bootstrap";
 import { useFormik, ErrorMessage } from "formik";
 import * as Yup from "yup";
-
+import { signUp } from "./signupSlice";
+import { useDispatch, useSelector } from "react-redux";
 const schemaValidation = Yup.object().shape({
   name: Yup.string()
     .required("required!")
@@ -16,6 +17,10 @@ const schemaValidation = Yup.object().shape({
 });
 
 const FormSignUp = () => {
+  const infoSignup = useSelector((state) => state.signups.infosignup);
+  
+  console.log(infoSignup);
+  const dispatch = useDispatch();
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -24,8 +29,9 @@ const FormSignUp = () => {
     },
     validationSchema: schemaValidation,
     onSubmit: (values) => {
-      console.log("ok");
-      alert(JSON.stringify(values, null, 2));
+      dispatch(signUp({ ...values, password: "ok" }));
+      // console.log("ok");
+      // alert(JSON.stringify(values, null, 2));
     },
   });
   return (

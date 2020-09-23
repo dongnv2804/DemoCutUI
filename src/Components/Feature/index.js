@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Drag3 from "./Drag3";
 import { useDispatch, useSelector } from "react-redux";
 import { getData } from "./featureSlice";
+import { HeadlineLg, Headlineunder } from "../../style/styled";
 const Feature = () => {
   const listdrags = useSelector((state) => state.features.listdragables);
   const dispatch = useDispatch();
@@ -15,10 +16,8 @@ const Feature = () => {
       <Container>
         <Row className="text-center">
           <Col md={12}>
-            <h2 className="headline1">AWESOME FEATURES</h2>
-            <h2 className="headline2">
-              What will you get with our template and Pagewiz{" "}
-            </h2>
+            <HeadlineLg>AWESOME FEATURES</HeadlineLg>
+            <Headlineunder>What will you get with our template and Pagewiz{" "}</Headlineunder>
           </Col>
         </Row>
         <Row>
